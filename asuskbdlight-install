@@ -1,0 +1,13 @@
+#!/bin/bash
+
+build() {
+    add_module asus_nb_wmi
+    add_runscript
+}
+
+help() {
+    cat <<HELPEOF
+Turns on Asus keyboard backlight.
+
+HELPEOF
+}

@@ -1,8 +1,6 @@
-# initramfs-l14kbdlight
+# initramfs-asuskbdlight
 
-[![AUR package](https://img.shields.io/aur/version/initramfs-l14kbdlight)](https://aur.archlinux.org/packages/initramfs-l14kbdlight/)
-
-This is a initcpio hook that can be used to turn the Librem 14's keyboard
+This is a initcpio hook that can be used to turn Asus laptops keyboard
 backlight on during boot. This is usefull when prompted to type the LUKS
 passphrase, for instance.
 
@@ -11,11 +9,11 @@ passphrase, for instance.
 Build:
 
     makepkg .
-    sudo pacman -U ./initramfs-l14kbdlight-*.pkg.tar.zst
+    sudo pacman -U ./initramfs-asuskbdlight-*.pkg.tar.zst
 
 Edit /etc/mkinitcpio.conf:
 
-    HOOKS=(base udev autodetect modconf block keyboard l14kbdlight encrypt filesystems resume)
+    HOOKS=(base udev autodetect modconf block keyboard asuskbdlight encrypt filesystems resume)
 
 Regenerate initramfs:
 
