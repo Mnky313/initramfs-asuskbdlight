@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 
 run_hook() {
     echo 255 > "/sys/class/leds/asus::kbd_backlight/brightness"
